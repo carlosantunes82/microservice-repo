@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/tcc?createDatabaseIfNotExist=false&useSSL=false
+    name: tcc
+    username: root
+    password:
+    initialization-mode: never
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      ddl-auto: update
